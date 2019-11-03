@@ -6,7 +6,6 @@ exports.resolvers = {
             return await Recipe.find()
 
             /* Alternatively 
-
             const allRecipes = await Recipe.find();
             return allRecipes; 
             */
