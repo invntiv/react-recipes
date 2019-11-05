@@ -19,9 +19,18 @@ export const GET_ALL_RECIPES = gql`
 /* User Queries */
 
 /* User Mutations */
+//USER SIGN UP
 export const SIGNUP_USER = gql`
   mutation($username: String!, $email: String!, $password: String!) {
     signupUser(username: $username, email: $email, password: $password) {
+      token
+    }
+  }
+`;
+//USER SIGN IN
+export const SIGNIN_USER = gql`
+  mutation($username: String!, $password: String!) {
+    signinUser(username: $username, password: $password) {
       token
     }
   }
