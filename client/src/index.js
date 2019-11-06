@@ -10,6 +10,7 @@ import "./index.css";
 import App from "./components/App";
 import SignIn from "./components/Auth/Signin";
 import SignUp from "./components/Auth/Signup";
+import withSession from "./components/withSession";
 
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
@@ -38,20 +39,22 @@ const client = new ApolloClient({
   }
 });
 
-const Root = () => (
+const Root = ({ refetch }) => (
   <Router>
     <Switch>
       <Route path="/" exact component={App} />
-      <Route path="/signin" component={SignIn} />
+      <Route path="/signin" render={() => <SignIn refetch={refetch} />} />
       <Route path="/signup" component={SignUp} />
       <Redirect to="/" />
     </Switch>
   </Router>
 );
 
+const RootWithSession = withSession(Root);
+
 ReactDOM.render(
   <ApolloProvider client={client}>
-    <Root />
+    <RootWithSession />
   </ApolloProvider>,
   document.getElementById("root")
 );
