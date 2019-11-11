@@ -10,12 +10,16 @@ import {
 } from "react-router-dom";
 import ApolloClient from "apollo-boost";
 
+/* Component Imports */
 import App from "./components/App";
 import SignIn from "./components/Auth/Signin";
-import SignUp from "./components/Auth/Signup";
+import Signup from "./components/Auth/Signup";
 import withSession from "./components/withSession";
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 import Search from "./components/Recipe/Search";
+import AddRecipe from "./components/Recipe/AddRecipe";
+import Profile from "./components/Profile/Profile";
+import RecipePage from "./components/Recipe/RecipePage";
 
 const client = new ApolloClient({
   uri: "http://localhost:4444/graphql",
@@ -34,22 +38,35 @@ const client = new ApolloClient({
     if (networkError) {
       console.log("Network Error", networkError);
     }
-
     if (networkError.statusCode === 401) {
-      // localStorage.removeItem('token');
+      localStorage.removeItem("token");
+    }
+    if (networkError === undefined) {
+      console.log("There is a problem.");
     }
   }
 });
 
-const Root = ({ refetch }) => (
+const Root = ({ refetch, session }) => (
   <Router>
     <Fragment>
-      <Navbar />
+      <Navbar session={session} />
       <Switch>
+        {/* Basic Routes */}
         <Route path="/" exact component={App} />
         <Route path="/search" exact component={Search} />
+        <Route path="/profile" component={Profile} />
+        {/* Authentication Routes */}
         <Route path="/signin" render={() => <SignIn refetch={refetch} />} />
-        <Route path="/signup" component={SignUp} />
+        <Route path="/signup" render={() => <Signup refetch={refetch} />} />
+        {/* Recipe Routes */}
+        <Route
+          path="/recipes/add"
+          render={() => <AddRecipe session={session} />}
+        />
+        <Route path="/recipes/:_id" component={RecipePage} />
+        <Route path="/profile" render={() => <Profile session={session} />} />
+
         <Redirect to="/" />
       </Switch>
     </Fragment>

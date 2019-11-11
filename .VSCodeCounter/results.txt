@@ -1,0 +1,68 @@
+Date : 2019-11-08 17:43:11
+Directory : /Users/joshmack/dev/react-recipes
+Total : 30 files,  18531 codes, 79 comments, 157 blanks, all 18767 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JSON       |          5 |     17,642 |          0 |          5 |     17,647 |
+| JavaScript |         20 |        762 |         51 |        102 |        915 |
+| CSS        |          2 |         53 |          0 |         11 |         64 |
+| Markdown   |          1 |         37 |          0 |         32 |         69 |
+| HTML       |          1 |         24 |         23 |          1 |         48 |
+| Ignore     |          1 |         13 |          5 |          6 |         24 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------+------------+------------+------------+------------+------------+
+| path                                       | files      | code       | comment    | blank      | total      |
++--------------------------------------------+------------+------------+------------+------------+------------+
+| .                                          |         30 |     18,531 |         79 |        157 |     18,767 |
+| client                                     |         23 |     14,368 |         66 |        129 |     14,563 |
+| client/src                                 |         17 |        575 |         38 |         87 |        700 |
+| client/src/components                      |         12 |        366 |          1 |         58 |        425 |
+| client/src/components/Auth                 |          3 |        209 |          0 |         22 |        231 |
+| models                                     |          2 |         74 |          0 |          5 |         79 |
+| client/public                              |          2 |         49 |         23 |          2 |         74 |
+| client/src/queries                         |          1 |         33 |          6 |          5 |         44 |
+| client/src/components/Recipe               |          3 |         16 |          0 |          9 |         25 |
+| client/src/components/Profile              |          1 |          3 |          0 |          3 |          6 |
++--------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                   | language   | code       | comment    | blank      | total      |
++--------------------------------------------+------------+------------+------------+------------+------------+
+| client/.gitignore                          | Ignore     |         13 |          5 |          6 |         24 |
+| client/README.md                           | Markdown   |         37 |          0 |         32 |         69 |
+| client/package-lock.json                   | JSON       |     13,659 |          0 |          1 |     13,660 |
+| client/package.json                        | JSON       |         35 |          0 |          1 |         36 |
+| client/public/index.html                   | HTML       |         24 |         23 |          1 |         48 |
+| client/public/manifest.json                | JSON       |         25 |          0 |          1 |         26 |
+| client/src/App.test.js                     | JavaScript |          8 |          0 |          2 |         10 |
+| client/src/components/App.css              | CSS        |         41 |          0 |          9 |         50 |
+| client/src/components/App.js               | JavaScript |         25 |          0 |          4 |         29 |
+| client/src/components/Auth/Signin.js       | JavaScript |         85 |          0 |         10 |         95 |
+| client/src/components/Auth/Signout.js      | JavaScript |         18 |          0 |          3 |         21 |
+| client/src/components/Auth/Signup.js       | JavaScript |        106 |          0 |          9 |        115 |
+| client/src/components/Error.js             | JavaScript |          3 |          0 |          3 |          6 |
+| client/src/components/Navbar.js            | JavaScript |         57 |          0 |          4 |         61 |
+| client/src/components/Profile/Profile.js   | JavaScript |          3 |          0 |          3 |          6 |
+| client/src/components/Recipe/AddRecipe.js  | JavaScript |          3 |          0 |          3 |          6 |
+| client/src/components/Recipe/RecipeItem.js | JavaScript |         10 |          0 |          3 |         13 |
+| client/src/components/Recipe/Search.js     | JavaScript |          3 |          0 |          3 |          6 |
+| client/src/components/withSession.js       | JavaScript |         12 |          1 |          4 |         17 |
+| client/src/index.css                       | CSS        |         12 |          0 |          2 |         14 |
+| client/src/index.js                        | JavaScript |         64 |          0 |          7 |         71 |
+| client/src/queries/index.js                | JavaScript |         33 |          6 |          5 |         44 |
+| client/src/serviceWorker.js                | JavaScript |         92 |         31 |         13 |        136 |
+| models/Recipe.js                           | JavaScript |         33 |          0 |          2 |         35 |
+| models/User.js                             | JavaScript |         41 |          0 |          3 |         44 |
+| package-lock.json                          | JSON       |      3,892 |          0 |          1 |      3,893 |
+| package.json                               | JSON       |         31 |          0 |          1 |         32 |
+| resolvers.js                               | JavaScript |         64 |          4 |          5 |         73 |
+| schema.js                                  | JavaScript |         39 |          0 |          1 |         40 |
+| server.js                                  | JavaScript |         63 |          9 |         15 |         87 |
+| Total                                      |            |     18,531 |         79 |        157 |     18,767 |
++--------------------------------------------+------------+------------+------------+------------+------------+
