@@ -55,7 +55,6 @@ const Root = ({ refetch, session }) => (
         {/* Basic Routes */}
         <Route path="/" exact component={App} />
         <Route path="/search" exact component={Search} />
-        <Route path="/profile" component={Profile} />
         {/* Authentication Routes */}
         <Route path="/signin" render={() => <SignIn refetch={refetch} />} />
         <Route path="/signup" render={() => <Signup refetch={refetch} />} />

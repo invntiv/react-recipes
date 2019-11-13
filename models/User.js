@@ -23,6 +23,10 @@ const UserSchema = new Schema({
   favorites: {
     type: [Schema.Types.ObjectId],
     ref: "Recipe"
+  },
+  recipes: {
+    type: [Schema.Types.ObjectID],
+    ref: "Recipe"
   }
 });
 UserSchema.set("autoIndex", false);
